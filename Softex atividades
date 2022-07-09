@@ -1,0 +1,50 @@
+Algoritmo "semnome"
+
+//Algoritmo produzido e testado no programa VisualG
+//Favor testar no mesmo
+
+
+Var
+
+   v: vetor[1..10] de inteiro
+   i, j, aux : inteiro
+
+
+Inicio
+
+   escreval("---Bubble sort---")
+   escreval("                 ")
+   escreval("                 ")
+   escreval("Escreva 10 números de sua preferência")
+
+   leia(v[1])
+   leia(v[2])
+   leia(v[3])
+   leia(v[4])
+   leia(v[5])
+   leia(v[6])
+   leia(v[8])
+   leia(v[8])
+   leia(v[9])
+   leia(v[10])
+
+   para i de 1 ate 9 faca
+      para j de 1 ate 9 faca
+
+         se (v[j] > v[j+1]) entao
+            aux <- v[j]
+            v[j] <- v[j+1]
+            v[j+1] <- aux
+         fimse
+      fimpara
+   fimpara
+
+   escreval("---------")
+
+   para i de 1 ate 10 faca
+      escreval(v[i])
+   fimpara
+
+
+
+Fimalgoritmo
