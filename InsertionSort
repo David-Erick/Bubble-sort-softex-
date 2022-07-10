@@ -1,0 +1,61 @@
+Algoritmo "insertion"
+
+//Algoritmo feito e testado no programa Visualg
+//favor testa-lo no mesmo(Visualg)
+
+
+Var
+
+   vet: vetor[1..30] de inteiro
+
+   j, i, hold, Impar: inteiro
+
+Inicio
+
+         escreval("----Algoritmo de InsertionSort----")
+         escreval("                                  ")
+
+   Impar <- 0
+   para i <- 1 ate 30 faca
+      escreva("Insira o ", i, "º número: ")
+      leia(vet[i])
+
+   fimPara
+
+   escreva("--------------------------------")
+   escreva("                                ")
+   escreva("                                ")
+   para i <- 1 ate 30 faca
+      se(vet[i] % 2 = 1) então
+         Impar <- Impar + 1
+         escreval("Números ímpares na posição: ", i)
+
+      fimSe
+   fimPara
+   escreval("O total de números ímpares foi: ", Impar)
+   escreva("--------------------------------")
+   escreva("                                ")
+   escreval("----------------------------------")
+   para i de 2 ate 30 faca
+      hold <- vet[i]
+      j <- i-1
+      enquanto (hold < vet[j]) faca
+         vet[j+1]<-vet[j]
+         j<-j-1
+         se j=0 entao
+            interrompa
+         fimse
+      fimenquanto
+
+      vet[j+1]<-hold
+   fimpara
+
+   escreval("----------------------------------")
+   escreval("----------------------------------")
+   escreva("                                   ")
+   para i de 1 ate 30 faca
+      escreval(vet[i])
+   fimpara
+
+
+Fimalgoritmo
