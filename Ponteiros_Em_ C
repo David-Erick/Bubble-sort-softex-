@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int *vetor;
+    
+    vetor = (int *) malloc (10 * sizeof(int));
+    if (vetor == NULL) {
+        
+        printf("Nao alocou memoria");
+        return 0;
+        }
+        
+    vetor = (int *) realloc(vetor, 22 * sizeof(int)); /* aciona a função realloc no intuito de guardar espaço para mais 22 elementos*/
+    
+    if (vetor == NULL){
+        printf("Nao alocou memoria");
+        return 0;
+    }
+    free(vetor);  /* libera a memoria alocada*/
+}
