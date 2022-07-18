@@ -1,0 +1,14 @@
+*Em relação ao transporte de Energia Elétrica*
+
+A principal função de uma linha de transmissão de energia eléctrica é o transporte de
+energia de fontes onde é gerada aos pontos onde é consumida. As linhas de transmissão são
+representadas pelo modelo π para o cálculo do fluxo de potência.
+
+*foto de exemplo: https://qph.fs.quoracdn.net/main-qimg-39321f88ae48d3d0b6e9c898e0e450d8-lq
+
+*Em relação ao Sistema de Recomendação* 
+
+Um dos grandes beneficiados com a modelagem em grafo é o sistema de recomendação de uma loja. 
+nos últimos anos, as lojas vêm melhorando sua eficiência em vendas online graças as técnicas de recomendações personalizadas,
+que além de auxiliar na redução da quantidade de itens apresentados a um comprador,
+um sistema de recomendação também aprende com o comportamento de navegação pelas páginas e dados de compra.
