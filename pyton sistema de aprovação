@@ -1,0 +1,15 @@
+
+print ("----------------")
+print ("SISTEMA DE NOTAS")
+print ("----------------")
+
+nome = str(input("Qual nome do(a) aluno(a)? "))
+nota_1 = int(input("Qual é a Primeira nota? "))
+nota_2 = int(input("Qual é a Segunda nota? "))
+faltas = int(input("Quantas faltas tem o(a) aluno(a)? "))
+
+if((nota_1 + nota_2)/2 >= 7 and faltas <= 3):
+        print("Aluno Aprovado")
+    
+else:
+            print("Aluno Reprovado")
