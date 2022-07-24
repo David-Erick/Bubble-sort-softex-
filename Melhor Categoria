@@ -1,0 +1,29 @@
+
+print ("--------------")
+print ("MELHOR VEÍCULO")
+print ("--------------")
+
+
+rodas = int(input("Qual é a quantidade de rodas do veículo? "))
+peso = int(input("Qual é o peso bruto em quilogramas do veículo? "))
+pessoas = int(input("Quantas pessoas cabem dentro do veículo? " ))
+
+if (rodas <= 3):
+    print("Melhor categoria é: A")
+    
+    
+elif (rodas == 4 and pessoas <= 8 and peso == 3500):
+    print("Melhor categoria é: B")
+
+elif (rodas >= 4 and 6000 >= peso >3500):
+    print("Melhor categoria é: C")
+    
+elif (rodas >= 4 and pessoas >8):
+    print("Melhor categoria é: D")
+    
+elif (rodas >= 4 and peso > 6000):
+    print("Melhor categoria é: E")
+
+else:
+    print("Não há caregoria para este tipo de veículo ")
+
